@@ -12,17 +12,17 @@
 	<xsd:import namespace="http://www.liquibase.org/xml/ns/dbchangelog"
 			schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd" />
 
-	<xsd:element name="createTable">
+	<xsd:element name="createTable_">
 		<xsd:complexType>
 			<xsd:sequence>
-				<xsd:element ref="primaryKey" minOccurs="0" maxOccurs="1" />
+				<xsd:element ref="primaryKey_" minOccurs="0" maxOccurs="1" />
 			</xsd:sequence>
 			<xsd:attributeGroup ref="lb:tableNameAttribute" />
 			<xsd:attribute name="remarks" type="xsd:string" />
 		</xsd:complexType>
 	</xsd:element>
 
-	<xsd:element name="primaryKey" />
+	<xsd:element name="primaryKey_" />
 
 
 </xsd:schema>
