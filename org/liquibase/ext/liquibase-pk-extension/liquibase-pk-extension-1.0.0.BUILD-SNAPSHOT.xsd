@@ -9,6 +9,9 @@
 		elementFormDefault="qualified">
 
 
+	<xsd:import namespace="http://www.liquibase.org/xml/ns/dbchangelog"
+			schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd" />
+
 	<xsd:element name="createTable">
 		<xsd:complexType>
 			<xsd:sequence>
